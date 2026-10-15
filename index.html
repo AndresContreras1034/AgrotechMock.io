@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgroGestor Ruscus – Simulador de Finca</title>
+  </head>
+  <body>
+    <header id="hud" class="topbar">
+      <strong>AgroGestor Ruscus · Simulador de Finca</strong>
+      <div class="hud-meta">
+        <span data-role="date">Semana 1</span>
+        <span data-role="money">$0</span>
+        <span data-role="water">Agua: 0 m3</span>
+      </div>
+      <span class="spacer"></span>
+      <button id="btn-fit" title="Atajo: 0">Vista general</button>
+      <button id="btn-zoom-out" title="Alejar">-</button>
+      <button id="btn-zoom-in" title="Acercar">+</button>
+      <button id="btn-cure-all">Curar todas</button>
+      <button id="btn-shop">Tienda de insumos</button>
+      <button id="btn-next-week">Siguiente semana</button>
+      <button id="btn-reset">Reiniciar</button>
+    </header>
+    <div id="goals"></div>
+
+    <main id="stage">
+      <aside id="side-panel" aria-label="Panel lateral">
+        <section id="month-panel" class="panel-card"></section>
+        <section id="bed-stats" class="panel-card"></section>
+      </aside>
+      <canvas id="world"></canvas>
+      <canvas id="minimap"></canvas>
+      <div id="notice">Datos ilustrativos, no reales</div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
