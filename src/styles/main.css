@@ -27,9 +27,9 @@ button, input, select, textarea { font: inherit; }
 #hud {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   height: 52px;
-  padding: 0 14px;
+  padding: 0 10px;
   background: linear-gradient(180deg, #1f3d2b 0%, #183325 100%);
   color: #fff;
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -37,14 +37,18 @@ button, input, select, textarea { font: inherit; }
   z-index: 30;
 }
 #hud .spacer { flex: 1; }
+#hud > strong { flex: 0 1 260px; font-size: 14px; white-space: nowrap; }
 #hud button {
-  padding: 8px 12px;
+  flex: 0 0 auto;
+  padding: 7px 8px;
   border: 0;
   border-radius: 8px;
   background: #3f7d58;
   color: #fff;
   cursor: pointer;
+  font-size: 12px;
   font-weight: 600;
+  white-space: nowrap;
   transition: background 0.15s ease, transform 0.15s ease;
 }
 #hud button:hover { background: #4e9a6c; }
@@ -203,9 +207,10 @@ button.secondary:disabled { background: #dfe7df; color: #6f7a70; cursor: not-all
 .hud-meta {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 12px;
+  gap: 8px;
+  font-size: 11px;
   opacity: 0.9;
+  white-space: nowrap;
 }
 
 #side-panel {
@@ -444,6 +449,7 @@ button.secondary:disabled { background: #dfe7df; color: #6f7a70; cursor: not-all
 
 @media (max-width: 900px) {
   #hud { height: auto; min-height: 52px; flex-wrap: wrap; padding: 8px 10px; }
+  #hud > strong { flex-basis: auto; }
   #hud .spacer { display: none; }
   .hud-meta { flex: 1; }
   #goals { width: calc(100% - 300px); }
