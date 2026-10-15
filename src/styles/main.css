@@ -59,7 +59,7 @@ button, input, select, textarea { font: inherit; }
 
 #goals {
   position: absolute;
-  top: 12px;
+  top: 64px;
   left: 50%;
   transform: translateX(-50%);
   width: min(640px, calc(100% - 320px));
@@ -458,6 +458,6 @@ button.secondary:disabled { background: #dfe7df; color: #6f7a70; cursor: not-all
   .shop-products { grid-template-columns: 1fr; }
   .shop-dialog { padding: 16px; }
   .shop-zone { align-items: flex-start; flex-direction: column; }
-  #goals { top: 8px; left: auto; right: 8px; transform: none; width: min(250px, calc(100% - 280px)); }
+  #goals { top: 96px; left: auto; right: 8px; transform: none; width: min(250px, calc(100% - 280px)); }
   #side-panel { width: 220px; }
 }
