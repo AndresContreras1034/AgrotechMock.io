@@ -58,7 +58,7 @@ addLayer(drawCreek);
 addLayer(drawGreenhouses);
 addLayer(drawSensors);
 addLayer(drawStems);
-addOverlay(drawEvents);
+addLayer(drawEvents);
 addOverlay(drawMinimap);
 
 let hoverKey = '';
